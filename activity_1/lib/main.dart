@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Icon(
-                Icons.favorite,
+                Icons.account_circle_rounded,
                 color: Colors.purple,
-                size: 24.0,
+                size: 140.0,
                 semanticLabel: 'Text to announce in accessibility modes',
               ),
               Text (
@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),//Text
               Text (
+                SizedBox(height: 50),
                 'Bachelor in Information Technology',
                 style: TextStyle(
                 color: Colors.grey,
@@ -58,8 +59,15 @@ class MyApp extends StatelessWidget {
                     size: 36.0,
                   ),
                 ],
-              )
-                          ],//Children
+              ),//row
+              Text (
+                'Ang Pogi mo Sir Rodney!',
+                style: TextStyle(
+                color: Colors.grey,
+                fontSize: 16,
+                ),
+              ),//Text
+            ],//Children
           ),//Column
         ),//Center
       ),//Scaffold
